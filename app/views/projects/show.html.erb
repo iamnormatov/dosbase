@@ -1,0 +1,17 @@
+<br>
+<br>
+<br>
+
+<div class="card" style="width: 25rem; margin: auto; background: none ">
+  <div class="card-body">
+    <h1 align="center">Show</h1>
+    <br>
+      <%= render @project %>
+      <br>
+      <%= link_to "Edit this project", edit_project_path(@project), class: "btn btn-secondary", style: "margin-left: 35px; background: none" %> |
+      <%= link_to "Back to projects", projects_path, class: "btn btn-secondary", style: "background: none" %> 
+      <br>
+      <br>
+      <%= button_to "Destroy this project", @project, method: :delete, class: "btn btn-secondary", style: "margin-left: 100px;  background: none" %>
+  </div>
+</div>
